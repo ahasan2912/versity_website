@@ -1,0 +1,29 @@
+@media (min-width:360px) and (max-width:640px){
+    section{
+        width: 160%;
+        height: 160vh;
+    }
+    .top{
+        padding: 0 20px;
+        height: 120px;
+    }
+    .logo{
+        margin: 0 20% 0 0;
+    }
+    .logo a h1{
+    font-size: 25px;
+   }
+   .menu_ber ul{
+    display: inline;
+ }
+ .info{
+    margin: 50% 0%;
+    top: 50%;
+    left: 30%;
+}
+}
+@media (max-width:640px) and (min-width:360px){
+    section{
+        height: 190vh;
+    }
+}

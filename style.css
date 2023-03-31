@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.top{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(4, 121, 0, 0.8);
+    display: flex;
+    padding: 0px 150px;
+    align-items: center;
+}
+.logo{
+    width: 60%;
+}
+.logo a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.logo a img{
+    width: 100px;
+}
+.logo a h1{
+    color: #fff;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: cursive;
+    margin-left: 2%;
+}
+.logo a h1:hover{
+    color: red;
+}
+.menu_ber{
+   width: 40%;
+}
+.menu_ber ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_ber ul li{
+    text-transform: uppercase;
+    position: relative;
+}
+.menu_ber ul li::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: aqua;
+    bottom: -7px;
+    left: 0;
+    transition: 0.5s all ease-in-out;
+}
+.menu_ber ul li:hover::after{
+    width: 100%;
+}
+.menu_ber ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: lato;
+}
+.menu_ber ul li a:hover{
+    color:red;
+}
+.info{
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.head_prea{
+    width: 100%;
+    padding:0% 20%;
+}
+.head_prea h1{
+    color: #fff;
+    font-size: 50px;
+    font-family: lato;
+    text-transform: uppercase;
+}
+.head_prea p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 0;
+    font-size: 20px;
+}
+.btn button{
+    padding: 15px 45px;
+    border: 2px solid aqua;
+    background: transparent;
+    color: #fff;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    
+}
+.btn button::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: rgba(4, 121, 0, 0.8);
+    bottom: 0;
+    left: 0;
+    transition: 0.5s all ease-in-out;
+}
+.btn button:hover::after{
+    width: 100%;
+}
